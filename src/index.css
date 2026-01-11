@@ -1,0 +1,27 @@
+:root{
+    --white: white;
+    --deep-purp: #300353;
+    --delete-bg-color: rgb(83, 3, 26);
+    --bg-color-one: rgb(48, 3, 83);
+    --bg-color-two:rgba(71, 53, 108, 0.302);
+    --text-color-one: white;
+    --text-color-two: rgb(48, 3, 83);
+    --selected-task-bg-color: rgba(121, 80, 179, 0.8);
+}
+
+.light-mode{
+    --bg-color-one: white;
+    --bg-color-two: rgba(48, 3, 83, 0.3);
+    --text-color-one: rgb(48, 3, 83);
+    --text-color-two: white;
+}
+
+body{
+    background-color: var(--bg-color-one);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    min-width: 350px;
+    padding-bottom: 10px;
+}

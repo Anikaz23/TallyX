@@ -1,0 +1,29 @@
+.lightModeToggle{
+    grid-column: 8;
+    height: 100%;
+    width: 100%;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    user-select: none;
+    color: var(--text-color-one);
+}
+
+.lightModeToggle span:first-child{
+    display: block;
+}
+
+.lightModeToggle span:last-child{
+    display: none;
+}
+
+:global(.light-mode) .lightModeToggle span:first-child{
+    display: none;
+}
+
+:global(.light-mode) .lightModeToggle span:last-child{
+    display: block;
+}

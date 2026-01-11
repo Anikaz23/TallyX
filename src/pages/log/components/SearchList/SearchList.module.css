@@ -1,0 +1,60 @@
+.searchListDiv{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.titleHead{
+    text-indent: 18px;
+    height: 40px;
+    width: 100%;
+    background-color: var(--bg-color-two);
+    color: var(--white);
+    font-size: 1.8em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+:global(.light-mode) .titleHead{
+    background-color: var(--deep-purp);
+}
+
+.searchUl{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.searchLi{
+    padding: 0;
+    margin: 0;
+    background-color: var(--bg-color-one);
+    display: grid;
+    height: 25px;
+    grid-template-columns: 3fr 1fr;
+    margin-bottom: 5px;
+    border-bottom: 1px solid var(--border-color-one);
+    color: var(--text-color-one);
+
+}
+
+.itemSpan{
+    grid-column: 1;
+    justify-content: flex-start;
+    align-items: center;
+    text-indent: 20px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.valSpan{
+    grid-column: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+    font-weight: bold;
+}
